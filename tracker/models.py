@@ -4,7 +4,7 @@ from django.db import models
 class Clothingplain(models.Model):
 	name = models.CharField(max_length=200)
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.name
 
 # class Clothingeotagged(models.Model):
