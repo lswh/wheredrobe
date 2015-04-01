@@ -17,7 +17,7 @@ class Clothingplain(models.Model):
 		(MISSING,'Missing'),
 		)
 	itemstatus = models.CharField(max_length=2, choices=status_choices, default=CABINET)
-	picture = models.ImageField()
+	picture = models.ImageField(default=None)
 
 	def __str__(self):
 		return self.name
