@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Clothingplain(models.Model):
 	name = models.CharField(max_length=200)
-	#Choice Field for Status
+	#Choice Field for Status of Clothing Item
 	CABINET = 'CB'
 	REPAIRSHOP = 'RS'
 	HAMPER = 'H'
@@ -17,8 +17,7 @@ class Clothingplain(models.Model):
 		(MISSING,'Missing'),
 		)
 	itemstatus = models.CharField(max_length=2, choices=status_choices, default=CABINET)
-	#picture = models.ImageField()
-
+	picture = models.ImageField()
 
 	def __str__(self):
 		return self.name
