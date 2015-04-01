@@ -42,6 +42,6 @@ class Clothingplain(models.Model):
 
 # class Clothingeotagged(models.Model):
 
-# class LaundryShop
+# class LaundryShopPOI:
 
-# class AlterShop 
+# class AlterShopPOI:
