@@ -15,7 +15,7 @@ class Clothingplain(models.Model):
 		(REPAIRSHOP,'Under Alterations'),
 		(HAMPER,'In the Hamper'),
 		(LAUNDRYSHOP,'At the Laundry Shop'),
-		(DONATION, 'For Donation or Charity')
+		(DONATION, 'For Donation or Charity'),
 		(MISSING,'Missing'),
 		)
 	itemstatus = models.CharField(max_length=2, choices=status_choices, default=CABINET)
