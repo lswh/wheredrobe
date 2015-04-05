@@ -1,4 +1,7 @@
 from django.db import models
+from django.core.files.storage import FileSystemStorage
+
+#fs = FileSystemStorage(location='/mediatemp')
 
 # Create your models here.
 class Clothingplain(models.Model):
