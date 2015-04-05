@@ -9,11 +9,13 @@ class Clothingplain(models.Model):
 	HAMPER = 'H'
 	LAUNDRYSHOP = 'LS'
 	MISSING = 'M'
+	DONATION = 'D'
 	status_choices = (
 		(CABINET,'In the Cabinet'),
 		(REPAIRSHOP,'Under Alterations'),
 		(HAMPER,'In the Hamper'),
 		(LAUNDRYSHOP,'At the Laundry Shop'),
+		(DONATION, 'For Donation or Charity')
 		(MISSING,'Missing'),
 		)
 	itemstatus = models.CharField(max_length=2, choices=status_choices, default=CABINET)
